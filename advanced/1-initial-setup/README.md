@@ -238,7 +238,7 @@ And check the components start progressing:
 ```
 watch kubectl get tigerastatus
 ```
-Wait util the `apiserver` shows an status of `True` under the `Available` column, then press `Ctrl+C` to return to the prompt, and apply the license file.
+Wait util the `apiserver` and `calico` shows an status of `True` under the `Available` column, then press `Ctrl+C` to return to the prompt, and apply the license file.
 
 ### 1.1.4. Apply the license
 ```
