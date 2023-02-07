@@ -105,7 +105,7 @@ $ kubectl cluster-info dump | grep -m 2 -E "service-cluster-ip-range|cluster-cid
                             "--service-cluster-ip-range=10.49.0.0/16",
                             "--cluster-cidr=10.48.0.0/16"
 ```
-Before installing Custom Resource definition which will install Calico CNI and other components of Calico Enterprise, lets view the Status and IP addresses for the existing pods. You will notice some pods are in Pending STATUS and no IP address has been assigned to them at this point. This is because there is no CNI exist in the cluster by default. 
+Before installing Custom Resource definition which will install Calico CNI and other components of Calico Enterprise, lets view the Status and IP addresses for the existing pods. You will notice some pods are in Pending `STATUS` and no `IP` address has been assigned to them at this point. This is because there is no CNI exist in the cluster by default. 
 ```
 kubectl get pods -A -o wide
 ```
