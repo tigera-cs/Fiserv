@@ -96,7 +96,7 @@ kubectl create secret generic tigera-pull-secret \
     --type=kubernetes.io/dockerconfigjson -n tigera-operator
 ```
 Run the following command to find the cluster-cidr (pod-network-cidr) that was used to bootstrap the cluster.  
-Note: The ipPools cidr has to be a subset of cluster-cidr (pod-network-cidr).
+**Note**: The ipPools cidr has to be a subset of cluster-cidr (pod-network-cidr).
 ```
 kubectl cluster-info dump | grep -m 2 -E "service-cluster-ip-range|cluster-cidr"
 ```
