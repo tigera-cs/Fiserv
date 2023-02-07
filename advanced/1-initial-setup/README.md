@@ -34,18 +34,27 @@ ip-10-0-1-31.ca-central-1.compute.internal   NotReady    worker                 
 First configure storage for Calico Enterprise, we will use AWS EBS provided by the AWS cloud provider integration.
 
 ```
-kubectl apply -f -<<EOF
+kubectl apply -f - <<EOF
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: tigera-elasticsearch
-provisioner: kubernetes.io/aws-ebs
-parameters:
-  type: gp2
-  fsType: ext4
-reclaimPolicy: Retain
-allowVolumeExpansion: true
+provisioner: kubernetes.io/no-provisioner
 volumeBindingMode: WaitForFirstConsumer
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: tigera-elasticsearch
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: /var/tigera/elastic-data/1
+  persistentVolumeReclaimPolicy: Recycle
+  storageClassName: tigera-elasticsearch
 EOF
 ```
 
