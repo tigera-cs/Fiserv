@@ -676,6 +676,7 @@ metadata:
   namespace: tigera-manager
   annotations:
     nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
   - host: "manager.template.lynx.tigera.ca"
