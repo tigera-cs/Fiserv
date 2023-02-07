@@ -105,6 +105,25 @@ $ kubectl cluster-info dump | grep -m 2 -E "service-cluster-ip-range|cluster-cid
                             "--service-cluster-ip-range=10.49.0.0/16",
                             "--cluster-cidr=10.48.0.0/16"
 ```
+Before installing Custom Resources which install Calico CNI and other components of Calico Enterprise, lets view the Status and IP addresses for the existing pods.
+```
+kubectl get pods -A -o wide
+```
+```
+tigera@bastion:~$ kubectl get pods -A -o wide
+NAMESPACE           NAME                                                                 READY   STATUS    RESTARTS   AGE   IP          NODE                                         NOMINATED NODE   READINESS GATES
+kube-system         coredns-64897985d-4mp9l                                              0/1     Pending   0          45m   <none>      <none>                                       <none>           <none>
+kube-system         coredns-64897985d-bpk4k                                              0/1     Pending   0          45m   <none>      <none>                                       <none>           <none>
+kube-system         etcd-ip-10-0-1-20.ca-central-1.compute.internal                      1/1     Running   0          45m   10.0.1.20   ip-10-0-1-20.ca-central-1.compute.internal   <none>           <none>
+kube-system         kube-apiserver-ip-10-0-1-20.ca-central-1.compute.internal            1/1     Running   0          45m   10.0.1.20   ip-10-0-1-20.ca-central-1.compute.internal   <none>           <none>
+kube-system         kube-controller-manager-ip-10-0-1-20.ca-central-1.compute.internal   1/1     Running   0          45m   10.0.1.20   ip-10-0-1-20.ca-central-1.compute.internal   <none>           <none>
+kube-system         kube-proxy-jq6d5                                                     1/1     Running   0          45m   10.0.1.31   ip-10-0-1-31.ca-central-1.compute.internal   <none>           <none>
+kube-system         kube-proxy-md9rc                                                     1/1     Running   0          45m   10.0.1.30   ip-10-0-1-30.ca-central-1.compute.internal   <none>           <none>
+kube-system         kube-proxy-qcl68                                                     1/1     Running   0          45m   10.0.1.20   ip-10-0-1-20.ca-central-1.compute.internal   <none>           <none>
+kube-system         kube-scheduler-ip-10-0-1-20.ca-central-1.compute.internal            1/1     Running   0          45m   10.0.1.20   ip-10-0-1-20.ca-central-1.compute.internal   <none>           <none>
+tigera-operator     tigera-operator-84d678b9c9-7tsmb                                     1/1     Running   0          16m   10.0.1.30   ip-10-0-1-30.ca-central-1.compute.internal   <none>           <none>
+tigera-prometheus   calico-prometheus-operator-cf96bcd5f-4lzg7                           0/1     Pending   0          15m   <none>      <none>                                       <none>           <none>
+```
 
 We will apply now the Custom Resource Definitions:
 
