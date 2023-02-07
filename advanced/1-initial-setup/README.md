@@ -274,12 +274,12 @@ kubectl create -f https://docs.tigera.io/manifests/tigera-policies.yaml
 
 ### 1.1.6. Install Calico Enterprise command line utility "calicoctl"  
 
-calicoctl is the Calico Enterprise specific command line utility that allows you to create, read, update, and delete Calico Enterprise objects from the command line.
+`calicoctl` is the Calico Enterprise specific command line utility that allows you to create, read, update, and delete Calico Enterprise objects from the command line.
 
 Perform the commands below to install the calicoctl client:
 
 ```
-curl -o calicoctl -O -L https://downloads.tigera.io/ee/binaries/v3.12.0/calicoctl
+curl -o calicoctl -O -L https://downloads.tigera.io/ee/binaries/v3.15.1/calicoctl
 ```
 ```
 chmod +x calicoctl
