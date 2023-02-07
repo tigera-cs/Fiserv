@@ -79,7 +79,7 @@ kubectl create -f https://downloads.tigera.io/ee/v3.15.1/manifests/tigera-operat
 We need to implement an operator for the prometheus component too:
 
 ```
-kubectl create -f https://docs.tigera.io/manifests/tigera-prometheus-operator.yaml
+kubectl create -f https://downloads.tigera.io/ee/v3.15.1/manifests/tigera-prometheus-operator.yaml
 ```
 
 Check tigera-operator has been successfully rolled out:
