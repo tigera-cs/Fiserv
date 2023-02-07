@@ -48,7 +48,7 @@ metadata:
   name: tigera-elasticsearch
 spec:
   capacity:
-    storage: 10Gi
+    storage: 20Gi
   accessModes:
     - ReadWriteOnce
   hostPath:
