@@ -9,7 +9,13 @@ Steps:\
 1.4. Access the application, Calico Enterprise UI, and Kibana
 
 ## 1.1. Install Calico Enterprise
-
+Before getting started, let's enable bash autocomplete for kubectl so that we can easier interact with kubectl.
+```
+sudo apt-get install bash-completion
+source /usr/share/bash-completion/bash_completion
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+source ~/.bashrc
+```
 ### 1.1.1. Check the environment, and prepare the nodes
 
 Your lab consists of a cluster of three nodes with a single master, and a bastion host from where you access the environment and simulate external connectivity. Kubernetes has been preinstalled, but as your network plugin is not there yet, your nodes will appear as NotReady:
@@ -150,14 +156,6 @@ calicoctl version
 
 Please confirm the "Cluster Calico Enterprise Version" matches the calicoctl version in "Client Version", otherwise please raise this to your instructor.
 
-Configure autocomplete for kubectl.
-
-```
-sudo apt-get install bash-completion
-source /usr/share/bash-completion/bash_completion
-echo 'source <(kubectl completion bash)' >>~/.bashrc
-source ~/.bashrc
-```
 
 ## 1.2. Launch the sample applications (yaobank)
 
