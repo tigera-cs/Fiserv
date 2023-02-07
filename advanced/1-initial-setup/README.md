@@ -73,7 +73,7 @@ tigera-elasticsearch   kubernetes.io/aws-ebs   Retain          WaitForFirstConsu
 Calico will be the networking (CNI) and network policy implementation throughout your training lab. To install Calico, we will use an operator, so it will implement and automate the lifecycle of our calico deployment:
 
 ```
-kubectl create -f https://docs.tigera.io/manifests/tigera-operator.yaml
+kubectl create -f https://downloads.tigera.io/ee/v3.15.1/manifests/tigera-operator.yaml
 ```
 
 We need to implement an operator for the prometheus component too:
