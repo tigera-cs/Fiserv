@@ -62,7 +62,7 @@ spec:
 EOF
 ```
 
-![networsets](img/3-networksets.png)
+![networsets](img/networksets.jpg)
 
 After applying the manifest, you will notice 4 new globalnetworksets:
 - `loopback` to account for the communication with loopback interface once we enable host endpoint protection (typical behavior of some linux kernel and a common trap to avoid)
