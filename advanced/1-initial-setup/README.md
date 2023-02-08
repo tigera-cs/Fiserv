@@ -738,7 +738,7 @@ Copy the output to a place where you can easily retrieve it later, as we will us
 ```
 https://manager.<LABNAME>.lynx.tigera.ca
 ```
-
+![tigera-manager-ui](img/1.tigera-manager-ui.jpg)
 ### 1.5.2. Retrieve the password to access Kibana
 
 To access Kibana, you must use the default `elastic` username. In order to retrieve the password, execute the following command:
