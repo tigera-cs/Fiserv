@@ -753,3 +753,4 @@ Now try to access Kibana from the left toolbar in Calico Enterprise as indicated
 
 
 ![kibana](img/4.Calico-enteprise-kibana.JPG)
+> **Congratulations! You have completed `1. Installing Calico Enterprise on K8s` lab.** 
