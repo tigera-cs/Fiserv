@@ -752,4 +752,4 @@ Similarly to what you did on the previous step, record the passsword so you can 
 Now try to access Kibana from the left toolbar in Calico Enterprise as indicated on the figure below. This will open a new tab where you must introduce the username (`elastic`) and password retrieved before:
 
 
-![kibana](img/1-kibana.png)
+![kibana](img/4.Calico-enteprise-kibana.JPG)
