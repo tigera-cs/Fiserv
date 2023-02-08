@@ -652,7 +652,6 @@ metadata:
   name: yaobank
   namespace: yaobank
   annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
