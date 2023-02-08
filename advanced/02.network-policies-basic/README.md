@@ -16,7 +16,7 @@ Navigate to the policy board using the toolbar on the left and click on "Policie
 
 ![policies](img/1.policy-board.jpg)
 
-You will see only 1 tier (the `default` one). There will be another tier that you can make visible by clicking on the `view` in the top right corner, and selecting `allow-tigera` under **Show Tiers**.
+You will see only one tier (the `default` one). There will be another tier that you can make visible by clicking on the `view` in the top right corner, and selecting `allow-tigera` under **Show Tiers**.
 
 Examine and apply the manifest file as below and notice three new tiers will show up.
 
