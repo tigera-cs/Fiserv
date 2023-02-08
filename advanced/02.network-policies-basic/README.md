@@ -14,7 +14,7 @@ The first step is to setup policy tiers which represent the policy hierarchy in 
 
 Navigate to the policy board using the toolbar on the left and click on "Policies".
 
-![policies](img/2-policies.png)
+![policies](img/1.policy-board.jpg)
 
 You will see only 1 tier (the `default` one). There will be another tier that you can make visible by clicking on the `Toggle Tiers` icon in the top right corner ![toggletier](img/1-toggle-tiers.png). These are the rules we applied for the essential Tigera components as part of the previous lab during the installation in step 1.1.5. 
 
