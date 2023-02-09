@@ -64,8 +64,8 @@ Make sure the storageclass has been created successfully:
 kubectl get storageclass
 ```
 ```
-NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-tigera-elasticsearch   kubernetes.io/aws-ebs   Retain          WaitForFirstConsumer   true                   10s
+NAME                   PROVISIONER                    RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+tigera-elasticsearch   kubernetes.io/no-provisioner   Delete          WaitForFirstConsumer   false                  25h
 ```
 
 ### 1.1.3. Make an operator based install
@@ -264,15 +264,7 @@ manager               True        False         False      50s
 monitor               True        False         False      4m50s
 ```
 
-### 1.1.5. Secure calico system components
-
-As part of the installtion process, we will implement Network security Policies to protect calico components but allow the communication between them, so we can follow a zero trust security approach. Implement the following calico network policies to the environment:
-
-```
-kubectl create -f https://docs.tigera.io/manifests/tigera-policies.yaml
-```
-
-### 1.1.6. Install Calico Enterprise command line utility "calicoctl"  
+### 1.1.5. Install Calico Enterprise command line utility "calicoctl"  
 
 `calicoctl` is the Calico Enterprise specific command line utility that allows you to create, read, update, and delete Calico Enterprise objects from the command line.
 
