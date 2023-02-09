@@ -359,10 +359,10 @@ kubectl get secret $(kubectl get serviceaccount devuser -o jsonpath='{range .sec
 
 You can see the security user can edit and create policies in the Security Tier as indicated in the image below. He can see any global policy too and configure them in that tier.
 
-![rbacsec](img/rbacsec.png)
+![rbacsec](img/rbacsec.jpg)
 
 On other hand, the devuser can only edit the application tier rules in its own namespace, non-kubernetes policies in the default tier, and he cannot create/edit or see global policies.
 
-![rbacdev](img/rbacdev.png)
+![rbacdev](img/rbacdev.jpg)
 
 If you recall the previous lab, we implemented tenant rules in our security Tier so we could delegate more specific control to the owners of the namespace. Using Kubernetes RBAC, we implemented the principle of least privilege by giving just enough access to each tenant to perform their required tasks.
