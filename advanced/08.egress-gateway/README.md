@@ -79,7 +79,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: egress-gateway
-        image: quay.io/tigera/egress-gateway:v3.7.0
+        image: quay.io/tigera/egress-gateway:v3.15.1
         env:
         - name: EGRESS_POD_IP
           valueFrom:
