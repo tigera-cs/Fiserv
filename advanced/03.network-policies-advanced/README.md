@@ -196,7 +196,7 @@ Notice the use of `selector (has(node-role.kubernetes.io/control-plane) || has(n
 
 Be aware that Calico implements failsafe rules that override calico policies to make sure you don't break vital services. In production, it recommended to maintain bare minimum fine-tuned failsafe rule for vital service, as a last resort, and implement granular policies for all other service.
 
-Refer to https://docs.tigera.io/security/protect-hosts#failsafe-rules
+Refer to https://docs.tigera.io/calico-enterprise/3.15/network-policy/hosts/protect-hosts#failsafe-rules
 
 Automatic HostEndpoints is disabled by default. Enable Automatic HostEndpoints by patching kubecontrollersconfiguration. 
 
