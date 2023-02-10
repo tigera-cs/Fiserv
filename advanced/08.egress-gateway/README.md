@@ -164,7 +164,7 @@ worker1  BGP      master   up     13:24:20    Established
 worker2  BGP      master   up     13:24:20    Established   
 ```
 
-If you check the routes, you will see the edge gateway is reachable through the worker node where it has been deployed:
+If you check the routes, you will see the egress gateway is reachable through the worker node where it has been deployed:
 
 ```
 ip route
