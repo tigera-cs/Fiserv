@@ -110,7 +110,7 @@ Go to the Dashboard. You should start seeing some abnormal increase in the traff
 
 Switch to the Service graph view. After a couple of minutes of starting the rogue pod, you should be able to see it is opening connections towards your kube-system dns pods and an alert icon signaling those will appear in the pod namespace. The corresponding alerts can also be checked on both, the Alerts tab in the Service Graph page or the Alerts section from Calico Enterprise Manager UI navigation pane.
 
-![servicegraph](img/10.2-servicegraph.png)
+![servicegraph](img/10.2-servicegraph.jpg)
 
 ### 10.3.4. Send the attacker pod traffic to a quarantine rule
 
