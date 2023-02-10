@@ -106,7 +106,7 @@ EOF
 
 Go to the Dashboard. You should start seeing some abnormal increase in the traffic flow in your environemnt in term of number of connections and packets being denied by some of the policies we already implemented.
 
-![dashboard](img/10.1-dashboard.png)
+![dashboard](img/10.1-dashboard.jpg)
 
 Switch to the Service graph view. After a couple of minutes of starting the rogue pod, you should be able to see it is opening connections towards your kube-system dns pods and an alert icon signaling those will appear in the pod namespace. The corresponding alerts can also be checked on both, the Alerts tab in the Service Graph page or the Alerts section from Calico Enterprise Manager UI navigation pane.
 
