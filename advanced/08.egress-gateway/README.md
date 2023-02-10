@@ -211,7 +211,7 @@ nc -zv 10.0.1.10 7777
 
 Type `exit` to exit out the pod terminal.
 
-Go to the terminal where that you ran teh tcpdump utility on the bastion node. You should see an output saying you connected from the IP of one of the egress gateway, instead of the original pod address:
+Go to the terminal where that you ran the tcpdump utility on the bastion node. You should see an output saying you connected from the IP of one of the egress gateway, instead of the original pod address:
 
 ```
 $ sudo tcpdump -i ens5 port 7777
