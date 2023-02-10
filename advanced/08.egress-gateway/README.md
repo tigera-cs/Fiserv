@@ -226,7 +226,7 @@ listening on ens5, link-type EN10MB (Ethernet), capture size 262144 bytes
 Login to worker node where the egress gateway and pods were deployed:
 
 ```
-ssh worker2
+ssh worker1
 ```
 
 Observe the routing policy is programmed for the the App workload POD IP
